@@ -1,5 +1,6 @@
 // import QtQuick 1.0 // to target S60 5th Edition or Maemo 5
 import QtQuick 1.1
+import"mirrorjs.js" as Handler
 
 Rectangle {
     id:home
@@ -36,22 +37,6 @@ Rectangle {
         text: "TV"
         x:10
         y:550
-    }
-    WindowSize2{
-        x:70
-        y:110
-    }
-    WindowSize2{
-        x:70
-        y:220
-    }
-    WindowSize2{
-        x:70
-        y:330
-    }
-    Music_TV_Window{
-        x:70
-        y:440
     }
     PermanentWindow{
         x:784
