@@ -2,7 +2,8 @@
 import QtQuick 1.1
 
 Rectangle {
-    width: 100
-    height: 62
-    color:"#111";
+    width: 250
+    height: 180
+    color:"#000"
+    radius:10
 }
