@@ -2,26 +2,67 @@
 import QtQuick 1.1
 
 Rectangle {
+    id:home
     width: 1024
     height: 728
-    MirrorIcon{
-        text: "Icon"
-        x:10
-        y:10
+    Header{
+        x:570
+        y:-40
     }
-    MirrorIcon{
-        text: "Icon"
-        x:10
-        y:60
+    WeatherIcon{
+
     }
-    MirrorIcon{
-        text: "Icon"
+    WindowSize1{
+        text: "Health"
         x:10
         y:110
     }
-    MirrorIcon{
-        text: "Icon"
+    WindowSize1{
+        text: "Outfit"
         x:10
-        y:160
+        y:220
+    }
+    WindowSize1{
+        text: "Stocks"
+        x:10
+        y:330
+    }
+    WindowSize1{
+        text: "Music"
+        x:10
+        y:440
+    }
+    WindowSize1{
+        text: "TV"
+        x:10
+        y:550
+    }
+    WindowSize2{
+        x:70
+        y:110
+    }
+    WindowSize2{
+        x:70
+        y:220
+    }
+    WindowSize2{
+        x:70
+        y:330
+    }
+    Music_TV_Window{
+        x:70
+        y:440
+    }
+    PermanentWindow{
+        x:784
+        y:110
+    }
+    PermanentWindow{
+        x:784
+        y:300
+    }
+    PermanentWindow{
+        x:784
+        y:490
     }
 }
