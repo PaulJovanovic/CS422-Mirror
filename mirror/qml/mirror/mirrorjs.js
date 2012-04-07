@@ -7,7 +7,7 @@ function click_icon(app){
     var yPos = 0;
     var open = 0;
     var count = 0;
-    while (leftbar[count] != app && count < 5){
+    while (leftbar[count] != app && count < 4){
         ++count;
     }
     if (leftbaropen[count] != null){
@@ -23,24 +23,6 @@ function click_icon(app){
     //  leftbar[count].color = "#555";
     }
     if (open == 0){
-    /*if (firstComponent == null)
-        firstComponent = Qt.createComponent("../mirror/WindowSize1.qml");
-
-    if (firstComponent.status == Component.Ready) {
-        var dynamicObject = clickComponent.createObject(home);
-        if (dynamicObject == null) {
-            console.log("error creating click");
-            console.log(component.errorString());
-            return false;
-        }
-        dynamicObject.x = 70;
-        dynamicObject.y = yPos;
-    } else {
-        console.log("error loading click component");
-        console.log(component.errorString());
-        return false;
-    }
-    */
     var path;
         if (count < 3){
             path = "../mirror/WindowSize2.qml";
@@ -48,13 +30,13 @@ function click_icon(app){
         else{
             path = "../mirror/Music_TV_Window.qml";
             if (count == 3){
-                if (leftbaropen[4] != null){
+                if (leftbaropen[4]){
                     leftbaropen[4].destroy();
                     leftbaropen[4] = null;
                 }
             }
             else{
-                if (leftbaropen[3] != null){
+                if (leftbaropen[3]){
                     leftbaropen[3].destroy();
                     leftbaropen[3] = null;
                 }
